@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLIVE RESTAURANT</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-element" href="#" onclick="home()"
+          >OLIVE RESTAURANT</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-element"
+                aria-current="page"
+                href="#"
+                onclick="home()"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <button class="nav-link nav-element" onclick="toggleAbout()">
+                About
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-element" href="#" onclick="home()"
+                >Feedback</a
+              >
+            </li>
+            <li class="nav-item">
+              <button class="nav-link nav-element" onclick="togglePayment()">
+                Payment
+              </button>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-element"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onclick="home()"
+              >
+                Menu-items
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#tea">Tea</a></li>
+                <li><a class="dropdown-item" href="#coffee">Coffee</a></li>
+                <li>
+                  <a class="dropdown-item" href="#beverage">Beverage(others)</a>
+                </li>
+                <li><a class="dropdown-item" href="#sandwich">Sandwichs</a></li>
+                <li><a class="dropdown-item" href="#toast">Toast</a></li>
+                <li>
+                  <a class="dropdown-item" href="#maggi">Maggi and Egg</a>
+                </li>
+                <li><a class="dropdown-item" href="#pizza">Pizza</a></li>
+                <li><a class="dropdown-item" href="#biryanni">Biryanni</a></li>
+                <li>
+                  <a class="dropdown-item" href="#roll">Roll and Chicken</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <h2 class="WELCOME">WELCOME TO OLIVE RESTAURANT</h2>
+    </header>
+    <div class="infinite-scroll-container">
+      <ul
+        class="d-flex justify-content-center justify-content-md-start animate-infinite-scroll"
+        id="scroll-list"
+      >
+        <li class="mx-3"><a href="#tea" style="color: blue">Tea</a></li>
+        <li class="mx-3">
+          <a href="#coffee" style="color: rgb(255, 119, 0)">Coffee</a>
+        </li>
+        <li class="mx-3">
+          <a href="#sandwich" style="color: rgb(24, 196, 231)">Sandwiches</a>
+        </li>
+        <li class="mx-3">
+          <a href="#beverage" style="color: yellowgreen">Beverage (others)</a>
+        </li>
+        <li class="mx-3">
+          <a href="#roll" style="color: rgb(203, 14, 197)">Chicken Popcorn</a>
+        </li>
+        <li class="mx-3">
+          <a href="#roll" style="color: rgba(92, 15, 236, 0.864)"
+            >Chicken Strips</a
+          >
+        </li>
+        <li class="mx-3">
+          <a href="#toast" style="color: rgb(255, 0, 174)">Toast</a>
+        </li>
+        <li class="mx-3">
+          <a href="#maggi" style="color: yellow">Maggi and Egg</a>
+        </li>
+        <li class="mx-3">
+          <a href="#pizza" style="color: chocolate">Pizza</a>
+        </li>
+        <li class="mx-3">
+          <a href="#biryanni" style="color: blueviolet">Biryani</a>
+        </li>
+        <li class="mx-3">
+          <a href="#roll" style="color: blue">Roll and Chicken</a>
+        </li>
+      </ul>
+      <ul
+        class="d-flex justify-content-center justify-content-md-start animate-infinite-scroll"
+        id="scroll-list"
+      >
+        <li class="mx-3">
+          <a href="#tea" style="color: rgba(252, 17, 173, 0.822)">Tea</a>
+        </li>
+        <li class="mx-3">
+          <a href="#coffee" style="color: rgb(152, 240, 20)">Coffee</a>
+        </li>
+        <li class="mx-3">
+          <a href="#sandwich" style="color: rgb(27, 225, 20)">Sandwiches</a>
+        </li>
+        <li class="mx-3">
+          <a href="#beverage" style="color: chocolate">Beverage (others)</a>
+        </li>
+        <li class="mx-3"><a href="#toast" style="color: violet">Toast</a></li>
+        <li class="mx-3">
+          <a href="#beverage" style="color: yellow">Beverage (others)</a>
+        </li>
+        <li class="mx-3">
+          <a href="#roll" style="color: goldenrod">Chicken Popcorn</a>
+        </li>
+        <li class="mx-3">
+          <a href="#maggi" style="color: olivedrab">Maggi and Egg</a>
+        </li>
+        <li class="mx-3"><a href="#pizza" style="color: blue">Pizza</a></li>
+        <li class="mx-3">
+          <a href="#biryanni" style="color: greenyellow">Biryani</a>
+        </li>
+        <li class="mx-3">
+          <a href="#roll" style="color: powderblue">Roll and Chicken</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="cards" id="tea">
+        <h1>Tea</h1>
+        <div class="item-container">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQ9KzrSrCghnvSCT76Les8pymqItrmGPxAA&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MILK TEA IN PAPER CUP</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 7.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img src="./chai.jpeg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MILK TEA IN MATKA</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 12.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img src="./malai.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MALAI TEA WITH MILK</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 15.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img src="BLACK.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">BLACK TEA -with & without Mashala</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 10.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img src="lemon.jpg" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">LEMON TEA</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 10.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- coffee -->
+
+      <div class="cards" id="coffee">
+        <h1>Coffee</h1>
+        <div class="item-container">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://5.imimg.com/data5/SELLER/Default/2022/10/JW/HU/DV/151133109/elite-age-90-ml-biodegradable-ripple-paper-cup-for-hot-tea-coffee-drinks-for-party-pack-of-25--500x500.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">BLACK COFFEE</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 20.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://as2.ftcdn.net/v2/jpg/01/71/13/33/1000_F_171133377_Vb0NgTtkK2LhvL9ahLMQR7tkbLaBw6HH.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MILK COFFEE</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 25.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://images.hindi.news18.com/ibnkhabar/uploads/2021/04/cold-coffee-1024x683.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">COLD COFFEE</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 50.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- other -->
+
+      <div class="cards" id="beverage">
+        <h1>Bevarages (others)</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.punjabkesari.com/wp-content/uploads/2024/03/Nimbu-pani-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">NIMBU PANI</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 10.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://thumbs.dreamstime.com/b/fresh-mojito-cocktail-lime-mint-blue-drinking-straw-plastic-cup-light-background-mojito-cocktail-plastic-cup-120723812.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">PUDINA SHARBAT</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 20.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://c8.alamy.com/comp/MANGC7/indian-traditional-drink-mint-masala-soda-cocktail-with-lemon-mint-and-spices-light-concrete-background-copy-space-MANGC7.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MASALA SODA</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 25.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SANDWICHS -->
+      <div class="cards" id="sandwich">
+        <h1>Sandwichs</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/yQyx7Hkww98/sddefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">HOT & CRISPY CHICKEN SANDWICH</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese₹ 65.00</p>
+                <p class="card-text">with cheese₹ 80.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.shutterstock.com/image-photo/veg-grilled-sandwich-served-ketchup-260nw-1880490184.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">VEG. SANDWICH</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹ 45.00</p>
+                <p class="card-text">with cheese ₹ 60.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://static.toiimg.com/thumb/57853896.cms?imgsize=1542881&width=800&height=800"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">SWEET CORN SANDWICH</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹ 50.00</p>
+                <p class="card-text">with cheese ₹ 65.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://madhurasrecipe.com/wp-content/uploads/2020/10/Boiled-Egg-Sandwich.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">BOILED EGG SANDWICH</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹45.00</p>
+                <p class="card-text">with cheese ₹60.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/LGcOcIFV8jo/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">DOUBLE SAMOSA SANDWIC</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹55.00</p>
+                <p class="card-text">with cheese ₹70.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBZy8fBFJB4BjehvSaAhkqZu-w9Zmd6cBMiQ&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHEES CHILLY SANDWICH</h5>
+              <div class="bottom">
+                <p class="card-text">cheese CHILLY ₹ 65.00</p>
+                <p class="card-text">cheese ₹ 50.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- toast -->
+      <div class="cards" id="toast">
+        <h1>Toast</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.archanaskitchen.com//images/archanaskitchen/1-Author/Pooja_Thakur/Masala_French_Toaste.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG BREAD TOAST</h5>
+              <div class="bottom">
+                <p class="card-text">single Egg. ₹ 30.00</p>
+                <p class="card-text">Double Egg. ₹ 40.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgo77XhTz_zKFQeif0k6hNigh-lhPDjmIGTg&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">BUTTER TOAS</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 25.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://recipesblob.oetker.in/assets/d65e637c02454051b6d7c11d05fd5a9d/1272x764/grilled-peanut-butter-and-jam-sandwich.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">JAM TOAST</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 25.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.indianveggiedelight.com/wp-content/uploads/2017/07/thumb_aloo_sandwich.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">BUTTER ALU TOAST</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 35.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/-IjuoSiXON0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUr8eT24gPxzvIxe8iqkc8w98DVQ"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MALAI TOAS</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 30.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maggi -->
+
+      <div class="cards" id="maggi">
+        <h1>MAGGI & EGG</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.pinimg.com/736x/48/c0/06/48c006871d4e88a7df47fba85b699fcc.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">VEG MAGGI</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹ 35.00</p>
+                <p class="card-text">with cheese ₹ 50.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.pinimg.com/564x/5c/19/10/5c19104c8b99d5377da65faa2cd4fc6d.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN MAGGI</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹ 60.00</p>
+                <p class="card-text">with cheese ₹ 75.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://images.static-collegedunia.com/public/image/og5(2).png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG MAGGI</h5>
+              <div class="bottom">
+                <p class="card-text">without cheese ₹ 45.00</p>
+                <p class="card-text">with cheese ₹ 60.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/oeCyTRCEwe8/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG POUCHT</h5>
+              <div class="bottom">
+                <p class="card-text">SINGLE EGG ₹ 13.00</p>
+                <p class="card-text">DOUBLE EGG ₹ 26.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.noracooks.com/wp-content/uploads/2021/08/sq-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG OMELETTE</h5>
+              <div class="bottom">
+                <p class="card-text">SINGLE EGG ₹ 14.00</p>
+                <p class="card-text">DOUBLE EGG ₹ 28.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- pizza -->
+
+      <div class="cards" id="pizza">
+        <h1>Pizza</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.hapli.in/wp-content/uploads/2024/02/Classic-Chicken-pizza-9-Inch-01.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 149.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/N5ZbnQE8RpA/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN MUSHROOM CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 179.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://enjoyinfourseason.com/wp-content/uploads/2022/05/Fourseason-CHEESE-MUSHROOM-PIZZA.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MUSHROOM CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 139.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://img.freepik.com/free-photo/pizza-with-mushrooms-sausage-mushrooms-corn-it_1340-25592.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MUSHROOM CORN CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 159.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.mrcoconut.in/img/products/04_12_2022_14_25_271_pm.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MUSHROOM PANEER CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 169.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.cookingcarnival.com/wp-content/uploads/2019/11/Paneer-Pizza-8-683x1024.webp"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">PANEER CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 134.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://lh6.googleusercontent.com/proxy/EAQmT9D1Mbq_BjZHmDmWa83yi2rTArWZlzczNrUmm6MhdRR4n6AqIR-wLayZzGzQT3Snrlk4iGGM356VEOroiyxZ7AZ6lOYUrrTtuwWnQueMH-jGC82TZy6KFHw7zCgsEeGTfg4nPal0KNEKgYbmP94ZLa9Tcg9k78-byVEkqL1wmwnfveahgHPJjVRWHjGEHzg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">PANEER CHILI CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 144.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHaIptS1whHG6HKXKTxGqkS2FCWU40-ZqIQ&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">SWEET CORN CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 114.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://smartchef.ttkprestige.com/wp-content/uploads/2022/04/vegetable-cheese-pizza.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">VEG CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 109.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://b.zmtcdn.com/data/dish_photos/436/4b8f568a9df63562b63a27cb5ee15436.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MASALA CHEESE PIZZA-9"P</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 114.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWMWYFgK7vlCVFl3XTUOQeMOji3hYz7A1Tmg&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">SCHEZWAN VEG CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 124.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aP9RQs-jDzuOee7KV9hGPaxbXcZpc7HKFw&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">VEGGIE FEAST CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 179.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://img.clevup.in/360704/plaincheesepizza-1717657137660.jpeg?format=webp"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">PLAIN CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 89.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/FzGa4bRRiNk/maxresdefault.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHOCOLATE CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 109.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://preview.redd.it/exotic-maggi-pizza-recipe-for-lip-smacking-taste-v0-tr8pxkik424b1.jpg?width=640&crop=smart&auto=webp&s=24cbd76c602770c891a37a8c76b93fb30f5d65de"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">MAGGI CHEESE PIZZA-9</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 139.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://static.toiimg.com/thumb/59632728.cms?imgsize=756767&width=800&height=800"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">ONION CHEESE PIZZA-9"</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 99.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- biryanni -->
+
+      <div class="cards" id="biryanni">
+        <h1>Biryanni</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://swatisani.net/kitchen/wp-content/uploads/2015/10/IMG_9526.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN BIRYANI</h5>
+              <div class="bottom">
+                <p class="card-text">₹100.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.sandyathome.com/wp-content/uploads/2019/04/chicken-biryani-recipe.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN EGG BIRYANI</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 110.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://spicecravings.com/wp-content/uploads/2020/10/Egg-Biryani-Featured-1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG BIRYANI</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 70.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/HTr1ZDm0G30/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAJf54bJsbMqBGk9LNaWFhy8b-fxA"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">ALU BIRYANI</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 60.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://i.ytimg.com/vi/oskLFFcvhGI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBzV5NKPyk8XXIhYd_3-XgsZTG6RA"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EXTRA CHICKEN</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 50.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://atanurrannagharrecipe.com/wp-content/uploads/2022/12/Chicken-Chap-photo-01.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN CHAAP</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 70.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards" id="roll">
+        <h1>ROLL & CHICKEN BROAST</h1>
+        <div class="item-container" id="tea">
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://img.favpng.com/24/19/16/kati-roll-egg-roll-chicken-tikka-kebab-png-favpng-Nb12KvQAfKnx7grM5Sig1xgJU.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 50.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://t3.ftcdn.net/jpg/06/72/68/02/360_F_672680295_4ZLh1jK9s4sd9FHyOTuhsw9GNmVJrX4S.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">DOUBLE CHICKEN ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 75.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdSUonBPnE0CZ4H4Fr4K6z03PDzb3DG6p-w&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG CHICKEN ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 60.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2-B7jdLwxh3eymY4mu1SmzYlCMm1Bc8sUw&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">EGG ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 35.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-fried-spring-egg-roll-vector-png-image_11379990.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">DOUBLE EGG ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 45.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwMZ9kvZqhjVItErog77eyT8PAQ0WxknWEUQ&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">DOUBLE EGG+CHICKEN ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 70.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVD5qliL-IdZKoyVbAeJ5DoBJqbqGHo0cvkg&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">PANEER ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 60.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFx1RtTKuQ97Pm1gyR3vkrhVig-bGp7LfLw&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">VEG ROLL</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 30.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://img.clearcals.com/recipes/2c31c14cd0092ae926f35ca8332f3fac434abe7f/medium.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">LACHA PARATHA</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 20.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7WlhQKy7FfRmkObTlNjOzoAczmOIvRVKC8w&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN POPCORN (REGULAR)</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 80.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://www.licious.in/blog/wp-content/uploads/2020/12/Popcorn-Chicken.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN POPCORN (LARGE)</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 120.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 15rem">
+            <div class="card-img-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN2MEskfyfXp8RnNmfQtH2Wl-ujpdgiDz7Zw&s"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title">CHICKEN STRIPS (5PCS)</h5>
+              <div class="bottom">
+                <p class="card-text">₹ 100.00</p>
+                <a href="#" class="btn btn-primary" onclick="popup()"
+                  >Order now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <h4 style="font-family: 'Bricolage Grotesque', sans-serif">
+            Saalam.dev
+          </h4>
+          <h5 class="text-black">
+            I'll assist you in crafting contemporary, fully functional websites.
+          </h5>
+        </div>
+        <div class="text-white fs-5">
+          <span
+            ><a
+              href="https://github.com/Saalam786"
+              style="color: rgb(19, 80, 234)"
+              >GitHub</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://www.facebook.com/@bad.boy.broken.heart.dil/?mibextid=ZbWKwL"
+              style="color: rgb(19, 80, 234)"
+              >facebook</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://www.instagram.com/saalam_786/profilecard/?igsh=MWlkeTExZGQ3ZTZl"
+              style="color: rgb(19, 80, 234)"
+              >instagram</a
+            ></span
+          >
+          <span
+            ><a
+              href="https://www.linkedin.com/in/saalam-ali-khan-847202291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              style="color: rgb(19, 80, 234)"
+              >LinkedIn</a
+            ></span
+          >
+        </div>
+        <span style="font-size: 70%"
+          >©2024 All Rigts Reserved. Designed with 💛 by Saalam.</span
+        >
+      </div>
+    </footer>
+    <section>
+      <div id="about" class="about">
+        <h1>About</h1>
+        <p>
+          We are delighted to have you at our restaurant. Our team is ready to
+          serve you with the finest food and service. Please feel free to
+          explore our diverse menu and choose your favorites. If you have any
+          special requests, dont hesitate to let us know. Our aim is to provide
+          you with a unique dining experience in a comfortable atmosphere. Your
+          presence means a lot to us. Thank you, and we hope your time here will
+          be truly memorable!
+        </p>
+        <p>
+          Our items are also parceled. MAGGI parcel will cost an additional
+          ₹3.00, PIZZA parcel will cost an additional ₹8.00, and TEA parcel
+          minimum ₹15.00.
+        </p>
+        <p class="highlight">OUR CHICKEN IS HALAL CHICKEN.</p>
+        <p class="contact">
+          OUR PHONE NUMBER IS
+          <span class="phone-number">📞+91 7980700295</span>.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div id="pay" class="pay">
+        <h1>Pay At:</h1>
+        <img src="WhatsApp Image 2024-10-05 at 14.09.28_dc39b6bc.jpg" alt="" />
+        <h2>
+          Please report your successful payments at the counter before leaving.
+        </h2>
+      </div>
+    </section>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
